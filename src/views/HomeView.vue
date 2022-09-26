@@ -1,18 +1,33 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="home">
+    <HeroComp />
+    <LayerComp />
+    <BgLayerComp />
+    <ProductsComp />
+    <SpecialComp />
+    <ShowComp />
+    <FooterComp/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import HeroComp from "@/components/home/HeroComp.vue";
+import LayerComp from "@/components/home/LayerComp.vue";
+import BgLayerComp from "../components/home/BgLayerComp.vue";
+import ProductsComp from "../components/home/ProductsComp.vue";
+import SpecialComp from "../components/home/SpecialComp.vue";
+import ShowComp from "../components/home/ShowComp.vue";
+import FooterComp from "../components/home/FooterComp.vue";
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
-    HelloWorld
-  }
-}
+    HeroComp,
+    LayerComp,
+    BgLayerComp,
+    ProductsComp,
+    SpecialComp,
+    ShowComp,
+    FooterComp
+},
+};
 </script>
